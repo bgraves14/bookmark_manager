@@ -18,7 +18,6 @@ feature 'Adding tags' do
     # our tags will be space separated
     fill_in 'tags',  with: 'education, ruby'
     click_button 'Create link'
-    save_and_open_page
     expect(page).to have_content 'education'
     expect(page).to have_content 'ruby'
   end

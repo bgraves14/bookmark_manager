@@ -8,7 +8,7 @@ DataMapper.setup(:default, ENV['DATABASE_URL'] ||
 
 require './app/models/link' # require each model individually - the path may vary depending on your file structure.
 require './app/models/tag'
-
+require './app/models/user'
 # After declaring your models, you should finalise them
 DataMapper.finalize
 

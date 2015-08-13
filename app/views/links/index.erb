@@ -1,4 +1,8 @@
-<h1> Links </h1>
+<% if any_user_logged_in? %>
+  <h1>Welcome, <%= current_user %></h1>
+<% end %>
+
+<h1>Links</h1>
 
 <ul id="links">
   <% @links.each do |link| %>
