@@ -45,8 +45,7 @@ class BookmarkManager < Sinatra::Base
 
   helpers do
     def current_user
-      user = User.get(session[:user_id])
-      user.email
+      User.get(session[:user_id])
     end
 
     def any_user_logged_in?
