@@ -5,7 +5,7 @@ feature 'Creating links' do
   end
 
   scenario 'I can create a new link' do
-    visit '/links/form'
+    visit '/links/new'
     fill_in 'url', with: 'http://www.zombo.com/'
     fill_in 'title', with: 'This is Zombocom'
     click_button 'Create link'
