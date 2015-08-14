@@ -11,4 +11,6 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'bcrypt'
+  gem 'sinatra-flash'
+  gem 'factory_girl'
 end
